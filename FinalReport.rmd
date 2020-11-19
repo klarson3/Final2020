@@ -41,6 +41,17 @@ colPerc(table1)
 ```
   
 It appears that 58% of the people that got infected took the drug, and 42% had taken the placebo. 
+
+  
+## Inferential for guys
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+The odds of a guy getting Covid if he takes the drug are 1.5:1 greater than if he takes the placebo. 
+
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
 # gals
@@ -64,6 +75,18 @@ colPerc(table1)
 ```
   
 The percentage of gals that got infected on the drug was 33% and on the placebo was 67%. 
+  
+## Inferential for gals
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The odds of getting covid if you are a gal are about .5:1. 
+
+
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
 # drug users
@@ -87,6 +110,16 @@ colPerc(table1)
 ```
   
 The percentage of drug users that got infected while taking the drug was 33% and while taking the placebo was 67%. 
+  
+## Inferential for Drug User
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+  
+The odds of getting Covid if you are a drug user is about .55:1. 
 
 # lgbtq
 ```{r}
@@ -110,7 +143,20 @@ colPerc(table1)
 ```
   
 In the LGBTQ community, the percentage of people who got infected on the drug was nearly 71%, whereas on the placebo was only 29%. 
+  
+## Inferential for lgbtq
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+  
+If you belong to the LGBTQ community, the chances of getting infected if taking the drug are 2.5:1. 
+
+  
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
